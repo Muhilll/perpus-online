@@ -14,18 +14,18 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        // $users = [];
+        $users = [];
 
-        // for ($i = 1; $i <= 5; $i++) {
-        //     $users[] = [
-        //         'username' => 'user' . $i,
-        //         'email' => 'user' . $i . '@gmail.com',
-        //         'password' => Hash::make('123'),
-        //         'activation_token' => Str::random(15),
-        //         'role' => 'user',
-        //         'is_active' => 1,
-        //     ];
-        // }
+        for ($i = 1; $i <= 5; $i++) {
+            $users[] = [
+                'username' => 'user' . $i,
+                'email' => 'user' . $i . '@gmail.com',
+                'password' => Hash::make('123'),
+                'activation_token' => Str::random(15),
+                'role' => 'user',
+                'is_active' => 1,
+            ];
+        }
 
         // DB::table('users')->insert($users);
 
